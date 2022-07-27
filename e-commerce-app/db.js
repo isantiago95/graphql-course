@@ -113,7 +113,7 @@ const reviews = [
     title: 'This is bad',
     comment: 'when i bought this it broke the stove',
     rating: 1,
-    productId: 1,
+    productId: '47bf3941-9c8b-42c0-9c72-7f3985492a5b',
   },
   {
     id: '78851fe8-a657-410f-9b0a-2bc952636e16',
