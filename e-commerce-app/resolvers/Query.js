@@ -2,8 +2,8 @@ exports.Query = {
   hello: () => {
     return ['hello', 'world'];
   },
-  products: (parent, args, { products }) => {
-    return products;
+  products: (_parent, { filter }, { products }) => {
+    return filter ? products.filter(product => product.onSale === filter.onSale) : products;
   },
   product: (parent, { id }, { products }) => {
     return products.find(p => p.id === id);
